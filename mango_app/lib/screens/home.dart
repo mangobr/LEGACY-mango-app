@@ -1,3 +1,4 @@
+import 'package:Mango/widgets/buttons/largeButton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -103,25 +104,7 @@ class Home extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                ButtonTheme(
-                  minWidth: 328,
-                  child: RaisedButton(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    onPressed: () {},
-                    color: Theme.of(context).colorScheme.primary,
-                    textColor: Colors.white,
-                    child: Container(
-                      margin: EdgeInsets.all(4),
-                      padding: EdgeInsets.all(4),
-                      child: Text(
-                        'Adicionar Refeição',
-                        style: TextStyle(fontSize: 20),
-                      ),
-                    ),
-                  ),
-                ),
+                LargeButton(),
               ],
             ),
           ],
