@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class LargeButton extends StatelessWidget {
+  String message;
+  LargeButton(String message) {
+    this.message = message;
+  }
   @override
   Widget build(BuildContext context) {
     return ButtonTheme(
@@ -16,7 +20,7 @@ class LargeButton extends StatelessWidget {
           margin: EdgeInsets.all(4),
           padding: EdgeInsets.all(4),
           child: Text(
-            'Adicionar Refeição',
+            this.message,
             style: TextStyle(fontSize: 20),
           ),
         ),
