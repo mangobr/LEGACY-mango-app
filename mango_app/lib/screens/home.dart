@@ -88,6 +88,53 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  height: 170,
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      ),
+                    ),
+                    child: Image(
+                      image: AssetImage('assets/food-1.png'),
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 170,
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      ),
+                    ),
+                    child: Image(
+                      image: AssetImage('assets/food-1.png'),
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 170,
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      ),
+                    ),
+                    child: Image(
+                      image: AssetImage('assets/food-1.png'),
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+              ],
+            ),
             InkWell(
               child: Container(
                 alignment: Alignment.bottomRight,
@@ -100,12 +147,33 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                LargeButton('Adicionar Refeição'),
-              ],
+            //   Card(
+            //   elevation: 3,
+            //   shape: RoundedRectangleBorder(
+            //     borderRadius: BorderRadius.all(
+            //       Radius.circular(20),
+            //     ),
+            //   ),
+            //   child: Container(
+            //     child: Image.asset(
+            //     'assets/food-1.png',
+            //       fit: BoxFit.scaleDown,
+            //     ),
+            //   ),
+            // );
+            Container(
+              height: MediaQuery.of(context).size.height / 5,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      LargeButton('Adicionar Refeição'),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ],
         ),

@@ -14,7 +14,6 @@ class MangoApp extends StatelessWidget {
       home: Home(),
       theme: ThemeData(
         fontFamily: 'BalooTammudu2',
-        // primaryColor: HexColor('#3D348B'),
         colorScheme: ColorScheme(
             primary: HexColor('#3D348B'),
             primaryVariant: Colors.black,
