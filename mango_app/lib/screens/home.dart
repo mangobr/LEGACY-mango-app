@@ -161,25 +161,20 @@ class Home extends StatelessWidget {
             //     ),
             //   ),
             // );
-            Expanded(
-              child: Container(
-                height: MediaQuery.of(context).size.height / 5,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        LargeButton('Adicionar Refeição'),
-                      ],
-                    ),
-                  ],
-                ),
+            Container(
+              height: MediaQuery.of(context).size.height / 5,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      LargeButton('Adicionar Refeição'),
+                    ],
+                  ),
+                ],
               ),
             ),
-            SizedBox(
-              height: 16,
-            )
           ],
         ),
       ),
