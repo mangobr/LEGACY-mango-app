@@ -88,52 +88,54 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  height: 170,
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20),
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    height: 170,
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20),
+                        ),
+                      ),
+                      child: Image(
+                        image: AssetImage('assets/food-1.png'),
+                        fit: BoxFit.contain,
                       ),
                     ),
-                    child: Image(
-                      image: AssetImage('assets/food-1.png'),
-                      fit: BoxFit.contain,
-                    ),
                   ),
-                ),
-                Container(
-                  height: 170,
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20),
+                  Container(
+                    height: 170,
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20),
+                        ),
+                      ),
+                      child: Image(
+                        image: AssetImage('assets/food-1.png'),
+                        fit: BoxFit.contain,
                       ),
                     ),
-                    child: Image(
-                      image: AssetImage('assets/food-1.png'),
-                      fit: BoxFit.contain,
-                    ),
                   ),
-                ),
-                Container(
-                  height: 170,
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20),
+                  Container(
+                    height: 170,
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20),
+                        ),
+                      ),
+                      child: Image(
+                        image: AssetImage('assets/food-1.png'),
+                        fit: BoxFit.contain,
                       ),
                     ),
-                    child: Image(
-                      image: AssetImage('assets/food-1.png'),
-                      fit: BoxFit.contain,
-                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             InkWell(
               child: Container(
