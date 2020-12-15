@@ -22,7 +22,7 @@
 	"compounds": [
 		{
 			"name": "All Devices",
-			"configurations": ["Android", "iPhone"],
+			"configurations": ["Android", "iPhone", "Current Device"],
 		}
 	]
 }
