@@ -5,10 +5,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class Home extends StatelessWidget {
-  // final Size screenSize;
-
-  // const Home({this.screenSize});
-
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -44,9 +40,6 @@ class Home extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // SizedBox(
-                  //   height: 36,
-                  // ),
                   Text(
                     'Oi, Fulana!',
                     style: TextStyle(
