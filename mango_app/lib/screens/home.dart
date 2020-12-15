@@ -5,8 +5,13 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class Home extends StatelessWidget {
+  // final Size screenSize;
+
+  // const Home({this.screenSize});
+
   @override
   Widget build(BuildContext context) {
+    var screenSize = MediaQuery.of(context).size;
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -39,9 +44,9 @@ class Home extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
-                    height: 36,
-                  ),
+                  // SizedBox(
+                  //   height: 36,
+                  // ),
                   Text(
                     'Oi, Fulana!',
                     style: TextStyle(
@@ -49,41 +54,65 @@ class Home extends StatelessWidget {
                       fontFamily: 'BalooTammudu2',
                       fontWeight: FontWeight.w900,
                       color: Theme.of(context).colorScheme.primary,
+                      height: 2,
                     ),
                   ),
                   Text(
                     'Hoje você ingeriu:',
                     style: TextStyle(
-                        fontSize: 14,
-                        fontFamily: 'Montserrat',
-                        fontWeight: FontWeight.w500),
+                      fontSize: 16,
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w500,
+                      height: 1,
+                    ),
                   ),
                   Text(
                     '320g',
-                    style: TextStyle(
-                      fontSize: 80,
-                      fontWeight: FontWeight.w900,
-                      height: 2,
-                      color: Theme.of(context).colorScheme.onSurface,
-                    ),
+                    style: screenSize.width < 400
+                        ? TextStyle(
+                            fontSize: 56,
+                            fontWeight: FontWeight.w900,
+                            height: 1.8,
+                            color: Theme.of(context).colorScheme.onSurface,
+                          )
+                        : TextStyle(
+                            fontSize: 80,
+                            fontWeight: FontWeight.w900,
+                            height: 1.8,
+                            color: Theme.of(context).colorScheme.onSurface,
+                          ),
                   ),
                   Text(
                     'de Carboidrato 🎉 ',
-                    style: TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.w900,
-                      height: 0,
-                      color: Theme.of(context).colorScheme.primary,
-                    ),
+                    style: screenSize.width < 400
+                        ? TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.w900,
+                            height: 0,
+                            color: Theme.of(context).colorScheme.primary,
+                          )
+                        : TextStyle(
+                            fontSize: 32,
+                            fontWeight: FontWeight.w900,
+                            height: 0,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
                   ),
                   Text(
                     'Últimas refeições postadas:',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontFamily: 'Montserrat',
-                      fontWeight: FontWeight.w700,
-                      height: 4,
-                    ),
+                    style: screenSize.width < 400
+                        ? TextStyle(
+                            fontSize: 16,
+                            fontFamily: 'Montserrat',
+                            fontWeight: FontWeight.w700,
+                            height: 2.5,
+                          )
+                        : TextStyle(
+                            fontSize: 16,
+                            fontFamily: 'Montserrat',
+                            fontWeight: FontWeight.w700,
+                            height: 4,
+                          ),
                   ),
                 ],
               ),
