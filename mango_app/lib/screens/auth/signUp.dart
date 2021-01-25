@@ -71,7 +71,12 @@ class SignUpScreen extends StatelessWidget {
                         height: 48,
                       ),
                       Center(
-                        child: LargeButton('Quero Continuar'),
+                        child: LargeButton(
+                          message: 'Quero Continuar',
+                          backgroundColor:
+                              Theme.of(context).colorScheme.primary,
+                          textColor: Colors.white,
+                        ),
                       ),
                     ],
                   )

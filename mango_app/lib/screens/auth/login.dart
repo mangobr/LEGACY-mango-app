@@ -80,7 +80,9 @@ simples e rápida.
                 child: Column(
                   children: [
                     LargeButton(
-                      'Usar email ou username',
+                      message: 'Usar email ou username',
+                      backgroundColor: Theme.of(context).colorScheme.primary,
+                      textColor: Colors.white,
                     ),
                     SizedBox(
                       height: 12,

@@ -16,7 +16,7 @@ class MangoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WellcomeScreen(),
+      home: WellcomeScreen('Jeremias'),
       theme: ThemeData(
         fontFamily: 'BalooTammudu2',
         colorScheme: ColorScheme(

@@ -194,7 +194,12 @@ class Home extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        LargeButton('Adicionar Refeição'),
+                        LargeButton(
+                          message: 'Adicionar Refeição',
+                          backgroundColor:
+                              Theme.of(context).colorScheme.primary,
+                          textColor: Colors.white,
+                        ),
                       ],
                     ),
                   ],
