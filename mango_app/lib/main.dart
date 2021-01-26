@@ -1,3 +1,4 @@
+import 'package:Mango/screens/auth/userRoles/roleSelection.dart';
 import 'package:Mango/screens/auth/wellcomeScreen.dart';
 import 'package:Mango/screens/home.dart';
 import 'package:Mango/screens/auth/login.dart';
@@ -16,7 +17,7 @@ class MangoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WellcomeScreen('Jeremias'),
+      home: UserRolesScreen(),
       theme: ThemeData(
         fontFamily: 'BalooTammudu2',
         colorScheme: ColorScheme(
