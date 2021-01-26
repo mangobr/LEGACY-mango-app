@@ -3,6 +3,8 @@ import 'package:Mango/screens/auth/wellcomeScreen.dart';
 import 'package:Mango/screens/home.dart';
 import 'package:Mango/screens/auth/login.dart';
 import 'package:Mango/screens/auth/signUp.dart';
+import 'package:Mango/screens/transitions/onLoadingTransition.dart';
+import 'package:Mango/screens/transitions/onSucessTransition.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -17,7 +19,7 @@ class MangoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: UserRolesScreen(),
+      home: SuccessTransionScreen(),
       theme: ThemeData(
         fontFamily: 'BalooTammudu2',
         colorScheme: ColorScheme(

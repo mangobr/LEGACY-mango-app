@@ -8,6 +8,12 @@ class UserRolesScreen extends StatefulWidget {
 }
 
 class _UserRolesScreenState extends State<UserRolesScreen> {
+  final radioMessageList = [
+    'Eu tenho diabetes',
+    'Meu filho/filha/filhe tem diabetes',
+    'Sou médico e cuido de pessoas diabéticas'
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
