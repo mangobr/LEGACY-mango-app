@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
-class SignUpHeader extends StatelessWidget {
+class MangoHeader extends StatelessWidget {
   Color color;
+  String message;
 
-  SignUpHeader(Color color) {
+  MangoHeader({@required Color color, @required String message}) {
     this.color = color;
+    this.message = message;
   }
 
   @override
@@ -20,7 +22,8 @@ class SignUpHeader extends StatelessWidget {
           onTap: () => print('Clicked - return'),
         ),
         Text(
-          'Crie seu cadastro',
+          message,
+          strutStyle: StrutStyle(leading: 4, forceStrutHeight: true),
           style: TextStyle(
             fontSize: 18,
             color: this.color,
@@ -31,7 +34,7 @@ class SignUpHeader extends StatelessWidget {
             Icons.clear,
             color: this.color,
           ),
-          onTap: () => print('Clicked - clear'),
+          onTap: () => print('Clicked - return'),
         ),
       ],
     );

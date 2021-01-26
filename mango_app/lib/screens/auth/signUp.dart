@@ -1,5 +1,5 @@
 import 'package:Mango/widgets/buttons/largeButton.dart';
-import 'package:Mango/widgets/headers/signUpHeader.dart';
+import 'package:Mango/widgets/headers/header.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -10,7 +10,7 @@ class SignUpScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SignUpHeader(Colors.black),
+            MangoHeader(color: Colors.black, message: 'Crie seu cadastro'),
             SizedBox(
               height: 54,
             ),

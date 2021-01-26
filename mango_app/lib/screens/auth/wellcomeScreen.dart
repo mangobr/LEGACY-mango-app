@@ -1,5 +1,5 @@
 import 'package:Mango/widgets/buttons/largeButton.dart';
-import 'package:Mango/widgets/headers/signUpHeader.dart';
+import 'package:Mango/widgets/headers/header.dart';
 import 'package:flutter/material.dart';
 
 class WellcomeScreen extends StatefulWidget {
@@ -21,7 +21,7 @@ class _WellcomeScreenState extends State<WellcomeScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            SignUpHeader(Colors.white),
+            MangoHeader(color: Colors.white, message: 'Crie seu cadastro'),
             Container(
               child: Expanded(
                 child: Column(
