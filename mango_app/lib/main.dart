@@ -22,7 +22,7 @@ class MangoApp extends StatelessWidget {
         colorScheme: ColorScheme(
           primary: HexColor('#3D348B'),
           primaryVariant: Colors.black,
-          secondary: Colors.black,
+          secondary: HexColor('#FFD600'),
           secondaryVariant: HexColor('#666666'),
           surface: HexColor('#0075FF'),
           background: Colors.black,

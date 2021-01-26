@@ -17,6 +17,7 @@ class SignUpHeader extends StatelessWidget {
             Icons.arrow_back_ios,
             color: this.color,
           ),
+          onTap: () => print('Clicked - return'),
         ),
         Text(
           'Crie seu cadastro',
@@ -25,9 +26,12 @@ class SignUpHeader extends StatelessWidget {
             color: this.color,
           ),
         ),
-        Icon(
-          Icons.clear,
-          color: this.color,
+        InkWell(
+          child: Icon(
+            Icons.clear,
+            color: this.color,
+          ),
+          onTap: () => print('Clicked - clear'),
         ),
       ],
     );
